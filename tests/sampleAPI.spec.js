@@ -24,5 +24,15 @@ describe('- Muslin API Testing', () => {
     
 	});
 
+  it('- Should be able to update(PUT) USER', async () => {
+
+    const response = await request(baseUrl)
+    .put('/api/users/2')
+    .send({"name": "morpheus","job": "zion resident"});
+    await expect(response.statusCode).to.equal(200);
+    await expect(response.ok).to.equal(true);
+    
+	});
+
 });
 

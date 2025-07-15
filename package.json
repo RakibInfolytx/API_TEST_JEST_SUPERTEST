@@ -13,5 +13,9 @@
     "chai": "^4.3.10",
     "jest": "^29.7.0",
     "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5",
+    "jest-html-reporter": "^4.3.0"
   }
 }

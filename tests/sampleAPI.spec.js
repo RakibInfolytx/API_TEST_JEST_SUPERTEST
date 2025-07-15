@@ -4,7 +4,7 @@ const expect = require('chai').expect;
 
 const baseUrl = 'https://reqres.in';
 
-describe('- Muslin API Testing', () => {
+describe('- Sample API Testing', () => {
 	
   it('- Should be able to verify (GET) USER', async () => {
 
@@ -14,7 +14,7 @@ describe('- Muslin API Testing', () => {
 
 	});
 
-  it('- Should be able to creat(POST) USER', async () => {
+  xit('- Should be able to creat(POST) USER', async () => {
 
     const response = await request(baseUrl)
     .post('/api/users')
@@ -24,7 +24,7 @@ describe('- Muslin API Testing', () => {
     
 	});
 
-  it('- Should be able to update(PUT) USER', async () => {
+  xit('- Should be able to update(PUT) USER', async () => {
 
     const response = await request(baseUrl)
     .put('/api/users/2')

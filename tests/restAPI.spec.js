@@ -4,7 +4,7 @@ const expect = require('chai').expect;
 
 const baseUrl = 'https://reqres.in';
 
-describe('- Sample API Testing', () => {
+describe('- REST API Testing', () => {
 	
   it('- Should be able to verify (GET) USER', async () => {
 

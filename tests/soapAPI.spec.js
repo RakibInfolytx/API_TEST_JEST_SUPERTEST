@@ -2,6 +2,8 @@ const request = require('supertest');
 const { XMLParser } = require('fast-xml-parser');
 const expect = require('chai').expect;
 
+const soapBaseUrl = 'http://www.dneonline.com';
+
 describe('SOAP API Test - Add Operation', () => {
   it('should return 15 as the result of 10 + 5', async () => {
     const soapEnvelope = `
@@ -15,7 +17,7 @@ describe('SOAP API Test - Add Operation', () => {
       </soap:Envelope>
     `;
 
-    const response = await request('http://www.dneonline.com')
+    const response = await request(soapBaseUrl)
       .post('/calculator.asmx')
       .set('Content-Type', 'text/xml; charset=utf-8')
       .set('SOAPAction', '"http://tempuri.org/Add"')
